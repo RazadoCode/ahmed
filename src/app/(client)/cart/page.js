@@ -44,7 +44,7 @@ const Cart = () => {
                     <div className="flex items-center gap-4 w-max">
                       <div className="w-24 h-24 shrink-0">
                         <img
-                          src={urlFor(item?.images[0])}
+                          src={urlFor(item?.images?.[0])?.url()}
                           className="w-full h-full object-cover"
                           alt={item?.name}
                         />
